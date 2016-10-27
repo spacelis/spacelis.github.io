@@ -1,3 +1,4 @@
 languageCode = "en-us"
 baseurl = "https://spacelis.github.io/"
 title = "SpaceLi's Blog"
+theme = "hugo-redlounge"
