@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Post-rsses on SpaceLi&#39;s Blog</title>
-    <link>https://spacelis.github.io/post/index.xml</link>
-    <description>Recent content in Post-rsses on SpaceLi&#39;s Blog</description>
+    <title>SpaceLi&#39;s Blog</title>
+    <link>https://spacelis.github.io/tags/development/index.xml</link>
+    <description>Recent content on SpaceLi&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Dec 2016 09:02:19 +0000</lastBuildDate>
-    <atom:link href="https://spacelis.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://spacelis.github.io/tags/development/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>CSV-Loader</title>
@@ -118,16 +117,6 @@ Following the pattern, one can easily create a new marker and it will automatica
 &lt;p&gt;This is a tool purely for my own interests.
 I hope it can become useful for some of you.
 Please let me know you if it helps you.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>hello world</title>
-      <link>https://spacelis.github.io/post/hello-world/</link>
-      <pubDate>Thu, 27 Oct 2016 22:38:35 +0100</pubDate>
-      
-      <guid>https://spacelis.github.io/post/hello-world/</guid>
-      <description>&lt;p&gt;I just start use (again) the github pages for my blog. Hopefully I will write more from now on.&lt;/p&gt;
 </description>
     </item>
     

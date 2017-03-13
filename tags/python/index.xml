@@ -1,57 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Post-rsses on SpaceLi&#39;s Blog</title>
-    <link>https://spacelis.github.io/post/index.xml</link>
-    <description>Recent content in Post-rsses on SpaceLi&#39;s Blog</description>
+    <title>SpaceLi&#39;s Blog</title>
+    <link>https://spacelis.github.io/tags/python/index.xml</link>
+    <description>Recent content on SpaceLi&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Dec 2016 09:02:19 +0000</lastBuildDate>
-    <atom:link href="https://spacelis.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>CSV-Loader</title>
-      <link>https://spacelis.github.io/post/csv-loader/</link>
-      <pubDate>Fri, 09 Dec 2016 09:02:19 +0000</pubDate>
-      
-      <guid>https://spacelis.github.io/post/csv-loader/</guid>
-      <description>
-
-&lt;p&gt;My work requires me importing a variety tables from CSV to DBMS.
-However, importing CSV is not always an easy and documentable task, as every DBMS has its own way of doing the job.
-There are different tools, be it GUI or CUI, that can help the process but there lacks a tool generally available for the task.
-I needed a tool for importing CSV tables and I took this opportunity to make a general tool.&lt;/p&gt;
-
-&lt;h1 id=&#34;csv-loader&#34;&gt;CSV-Loader&lt;/h1&gt;
-
-&lt;p&gt;CSV-Loader uses SQLAlchemy for generalize the DB operating and messytables for schema detecting.
-The tool is composed of several commands, one is for generating schemas from arbitrary CSV files.
-Another is for uploading the data according to the schema generated.
-The third is for building single column indices for all columns on a table.&lt;/p&gt;
-
-&lt;h1 id=&#34;schema-as-documentation&#34;&gt;Schema As Documentation&lt;/h1&gt;
-
-&lt;p&gt;The schema generated from the CSV is an intermediate step for importing the CSV files.
-It gives users a chance to review the schema before importing millions of rows for a few hours.
-Sometimes, simple data type conversion or transformation is needed during the importing.
-Thus users can edit the schema file to integrate the conversion or transformation into the importing processes.
-In these cases, the schema file can be archived for data documentation, so that when there is similar data required to be imported, the same processes can be reused to ensure the consistance.&lt;/p&gt;
-
-&lt;h1 id=&#34;implementation-details&#34;&gt;Implementation Details&lt;/h1&gt;
-
-&lt;p&gt;For CSV-Loader, &lt;code&gt;messytables&lt;/code&gt; is used for detecting the types and names of columns in a CSV file.
-Accordingly, the schema is generated in pure Python module.
-The schema generating tool will also try to convert column names into a format that will comply with the naming rules in the DB.
-When column names are missing in the CSV file, users are required to edit the schema file to assign a name to each column.
-Otherwise, the tool may fail importing data into the DB.
-This will be improved in the future release.
-For example, some random name will be generated to enable importing before naming.&lt;/p&gt;
-
-&lt;p&gt;Currently, enabled by &lt;code&gt;SQLAlchemy&lt;/code&gt;, CSV-Loader supports four different RDBMS, that is, SQLite, MySQL, PostgreSQL, MSSQL.
-Since only a small set of language is used in the importing process, a later version of CSV-Loader may integrate non-SQL DB importing.
-Hopefull, it can help users that requires different DBMS in their data analysis.&lt;/p&gt;
-</description>
-    </item>
+    <atom:link href="https://spacelis.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>BakMan: A file oriented backup management tool.</title>
@@ -118,16 +73,6 @@ Following the pattern, one can easily create a new marker and it will automatica
 &lt;p&gt;This is a tool purely for my own interests.
 I hope it can become useful for some of you.
 Please let me know you if it helps you.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>hello world</title>
-      <link>https://spacelis.github.io/post/hello-world/</link>
-      <pubDate>Thu, 27 Oct 2016 22:38:35 +0100</pubDate>
-      
-      <guid>https://spacelis.github.io/post/hello-world/</guid>
-      <description>&lt;p&gt;I just start use (again) the github pages for my blog. Hopefully I will write more from now on.&lt;/p&gt;
 </description>
     </item>
     
