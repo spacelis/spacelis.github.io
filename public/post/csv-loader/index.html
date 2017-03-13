@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    CSV-Loader // SpaceLi&#39;s Blog
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.17" />
+
+  <meta property="og:title" content="CSV-Loader" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="https://spacelis.github.io/post/csv-loader/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="https://spacelis.github.io//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="SpaceLi&#39;s Blog" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+	
+
+    
+    
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="https://spacelis.github.io/">Home</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/post/csv-loader/">CSV-Loader</a></li>
+        
+      </ul>
+    </nav>
+
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">Contents</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li><a href="#csv-loader">CSV-Loader</a></li>
+<li><a href="#schema-as-documentation">Schema As Documentation</a></li>
+<li><a href="#implementation-details">Implementation Details</a></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/post/csv-loader/">CSV-Loader</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>9</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Dec</span> <span class="post-date-year">2016</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-development" href="https://spacelis.github.io//categories/development">Development</a>
+				
+					<a class="post-category post-category-golang" href="https://spacelis.github.io//categories/golang">GoLang</a>
+				
+				</div>
+			
+
+			
+
+			
+
+            
+
+<p>My work requires me importing a variety tables from CSV to DBMS.
+However, importing CSV is not always an easy and documentable task, as every DBMS has its own way of doing the job.
+There are different tools, be it GUI or CUI, that can help the process but there lacks a tool generally available for the task.
+I needed a tool for importing CSV tables and I took this opportunity to make a general tool.</p>
+
+<h1 id="csv-loader">CSV-Loader</h1>
+
+<p>CSV-Loader uses SQLAlchemy for generalize the DB operating and messytables for schema detecting.
+The tool is composed of several commands, one is for generating schemas from arbitrary CSV files.
+Another is for uploading the data according to the schema generated.
+The third is for building single column indices for all columns on a table.</p>
+
+<h1 id="schema-as-documentation">Schema As Documentation</h1>
+
+<p>The schema generated from the CSV is an intermediate step for importing the CSV files.
+It gives users a chance to review the schema before importing millions of rows for a few hours.
+Sometimes, simple data type conversion or transformation is needed during the importing.
+Thus users can edit the schema file to integrate the conversion or transformation into the importing processes.
+In these cases, the schema file can be archived for data documentation, so that when there is similar data required to be imported, the same processes can be reused to ensure the consistance.</p>
+
+<h1 id="implementation-details">Implementation Details</h1>
+
+<p>For CSV-Loader, <code>messytables</code> is used for detecting the types and names of columns in a CSV file.
+Accordingly, the schema is generated in pure Python module.
+The schema generating tool will also try to convert column names into a format that will comply with the naming rules in the DB.
+When column names are missing in the CSV file, users are required to edit the schema file to assign a name to each column.
+Otherwise, the tool may fail importing data into the DB.
+This will be improved in the future release.
+For example, some random name will be generated to enable importing before naming.</p>
+
+<p>Currently, enabled by <code>SQLAlchemy</code>, CSV-Loader supports four different RDBMS, that is, SQLite, MySQL, PostgreSQL, MSSQL.
+Since only a small set of language is used in the importing process, a later version of CSV-Loader may integrate non-SQL DB importing.
+Hopefull, it can help users that requires different DBMS in their data analysis.</p>
+
+	
+			
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-development" href="https://spacelis.github.io//tags/development">Development</a>,
+	                
+	                <a class="post-tag post-tag-golang" href="https://spacelis.github.io//tags/golang">golang</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/post/bakman/">BakMan: A file oriented backup management tool.</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>&copy; 2017. All rights reserved.</p>
+</div>
+    </div>
+  </div>
+	
+
+	
+
+  
+</body>
+</html>

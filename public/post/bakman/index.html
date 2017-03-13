@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    BakMan: A file oriented backup management tool. // SpaceLi&#39;s Blog
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.17" />
+
+  <meta property="og:title" content="BakMan: A file oriented backup management tool." />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="https://spacelis.github.io/post/bakman/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="https://spacelis.github.io//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="SpaceLi&#39;s Blog" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+	
+
+    
+    
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="https://spacelis.github.io/">Home</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/post/csv-loader/">CSV-Loader</a></li>
+        
+      </ul>
+    </nav>
+
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">Contents</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li><a href="#bakman">BakMan</a></li>
+<li><a href="#script-generating-vs-action-immediately">Script Generating VS action immediately</a></li>
+<li><a href="#the-rule-system">The Rule System</a></li>
+<li><a href="#an-extensible-tool">An Extensible Tool</a></li>
+<li><a href="#last-words">Last Words</a></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/post/bakman/">BakMan: A file oriented backup management tool.</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>2</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Nov</span> <span class="post-date-year">2016</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-development" href="https://spacelis.github.io//categories/development">Development</a>
+				
+					<a class="post-category post-category-python" href="https://spacelis.github.io//categories/python">Python</a>
+				
+				</div>
+			
+
+			
+
+			
+
+            
+
+<p>If you ever had tons of backup files which quickly fill up all your disk space, this tool might be useful to you.
+Bakman is a BAcKup MANagement tool for automatically tracing unneeded backup files and generating management scripts.
+The core idea is to filtering backup files by a set of customizable rules.
+The rule file will define which files in the piles should be removed or stashed somewhere else.</p>
+
+<h1 id="bakman">BakMan</h1>
+
+<p>This project was originate from my needs to manage the backup files of a website.
+The website provides access to quite some datasets which took a lot of place to backup at daily frequency.
+It triggered me to thing about the general way of dealing with backup files when the disk was incidently filled up and got the website down.
+Therefore I have to delete some backup files to release disk space for running the website.
+However, deleting all the backup files up to a certain date is kind of simple and effective way but you may loose the trace and may cause you in trouble if you are not frequently managing the website.
+So it might be better to have a tool that allows you to use more complex logic for managing your backups.
+For example, you may want to keep all the backups within 7 days and one per week within 3 months and one per month for those older than 3 months.
+This logic will greatly reduce the number of backups you need to keep and still give you the ability of tracing the changes since the very beginning.
+The downside is that I need to write the tool as I could not find a suitable ones on the Internet.
+Maybe I am just curious about whether I can build one myself and there you go BakMan.</p>
+
+<h1 id="script-generating-vs-action-immediately">Script Generating VS action immediately</h1>
+
+<p>BakMan accepts a rule file defining how the backup files should be separated, that is, those that need to be deal with and those that should be left untouched.
+Based on the rules, BakMan will generate a script by feeding those that need to be dealt with into a template.
+For example, if you use <code>rm -rf {0}</code>, then the script will try to remove all the unwanted backup files.
+If you use <code>trash {0}</code>, then the script will put unwanted backup files in the trash can.
+An alternative design could be carry out actions immediately without generating a script for user to run.
+But making dangeous actions as default is never a good idea.
+So giving users a chance to inspect the actual actions that are going to carry out will make sure they are not suprised.
+Of course users can still automate the task by piping the output script to bash.
+This little extra effort and the delibration asking users to think twice will reduce the chance of going to a disaster.
+Similar design can be found every where from querying user when <code>rm</code> a file to requesting user to type repository name when deleting it on Github.
+It also allows trial run with no harm to the system.</p>
+
+<h1 id="the-rule-system">The Rule System</h1>
+
+<p>The core of BakMan is the rule system, which make it a nice tool for complex backup retaining strategy.
+The rule system is based on group-aware marking.
+Simple as it is, it marks files based on its role in a group.
+The group can be defined by a period of time, for example, a month or a week.
+A role in a group can be the first one in the group or the last one.
+The markings from different group can either be merged in a conjunction way or a disjunction way.</p>
+
+<p>The rules are organized in a tree structure as different level of mark merging may be required.
+In BakMan, the rule file can be written in YAML or JSON.
+A parser will translate it into a tree structure of makers.
+This marker will be applied to the files that need to be managed.</p>
+
+<h1 id="an-extensible-tool">An Extensible Tool</h1>
+
+<p>Along with developing the rule parser, quite some effort was put into the extensibility of the parsers.
+The parser is integrated to the markers which a metaclass is created to allow implicit registering of new markers.
+Following the pattern, one can easily create a new marker and it will automatically be integrated into the rule system.</p>
+
+<h1 id="last-words">Last Words</h1>
+
+<p>This is a tool purely for my own interests.
+I hope it can become useful for some of you.
+Please let me know you if it helps you.</p>
+
+	
+			
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-development" href="https://spacelis.github.io//tags/development">Development</a>,
+	                
+	                <a class="post-tag post-tag-python" href="https://spacelis.github.io//tags/python">Python</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/post/csv-loader/">CSV-Loader</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/post/hello-world/">hello world</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>&copy; 2017. All rights reserved.</p>
+</div>
+    </div>
+  </div>
+	
+
+	
+
+  
+</body>
+</html>
