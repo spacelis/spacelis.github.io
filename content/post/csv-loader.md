@@ -1,17 +1,16 @@
 +++
 Description = ""
 Tags = [
-  "Development",
-  "golang",
+  "Python",
+  "Tools"
 ]
 Categories = [
-  "Development",
-  "GoLang",
+  "Projects",
 ]
-menu = "main"
+# menu = "main"
 date = "2016-12-09T09:02:19Z"
 title = "CSV-Loader"
-
+draft = false
 +++
 
 My work requires me importing a variety tables from CSV to DBMS.

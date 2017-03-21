@@ -4,12 +4,12 @@ date = "2016-11-02T22:17:59Z"
 title = "BakMan: A file oriented backup management tool."
 draft = false
 Tags = [
-  "Development",
   "Python",
+  "Tools",
+  "Backup"
 ]
 Categories = [
-  "Development",
-  "Python",
+  "Projects"
 ]
 
 +++

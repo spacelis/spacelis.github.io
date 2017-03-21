@@ -2,15 +2,14 @@
 date = "2016-12-09T08:24:03Z"
 title = "BakMan rules"
 Tags = [
-  "Development",
-  "golang",
+  "Tools",
+  "Backup",
 ]
 draft = "true"
 Categories = [
-  "Development",
-  "GoLang",
+  "Pounder",
 ]
-menu = "main"
+# menu = "main"
 Description = ""
 
 +++

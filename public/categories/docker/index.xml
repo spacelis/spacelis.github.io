@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SpaceLi&#39;s Blog</title>
+    <link>https://spacelis.github.io/categories/docker/index.xml</link>
+    <description>Recent content on SpaceLi&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://spacelis.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Container Oriented or Image Oriented</title>
+      <link>https://spacelis.github.io/post/container-oriented-or-image-oriented/</link>
+      <pubDate>Mon, 20 Mar 2017 01:58:52 +0000</pubDate>
+      
+      <guid>https://spacelis.github.io/post/container-oriented-or-image-oriented/</guid>
+      <description>&lt;p&gt;However, my first attempt was not quite satisfactory.
+I was too ambitious in building a system composed of several containers with each process in one container, as recommended in the community.
+However, this makes initialization of components running in different containers very complex.
+I put a lot of effort in making sure they are initialized in the right order, even using [consul]() for distribution configurations.
+This did not work very well, especially when the hardware went down.
+The lack of tools and knowledge of doing it in the right way frustrated me and make me going in a different direction.&lt;/p&gt;
+
+&lt;p&gt;I put a lot of attention to the containers in my previous attampt&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
