@@ -51,6 +51,35 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
 
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<link rel="stylesheet" type="text/css" href="https://spacelis.github.io//css/lightbox.css">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+
 
   
 
@@ -76,8 +105,6 @@
       <ul class="nav-list">
         <li class="nav-item"><span class="nav-item-separator">//</span><a href="https://spacelis.github.io/">Home</a></li>
         
-          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/post/csv-loader/">CSV-Loader</a></li>
-        
       </ul>
     </nav>
 
@@ -92,6 +119,46 @@
       
 
       <div class="posts">
+        
+          <section  class="post">
+            <header class="post-header">
+            
+            <h1 class="post-title">
+              <a href="/post/container-oriented-or-image-oriented/">Container Oriented or Image Oriented</a>
+            </h1>
+            </header>
+            <p class="post-meta">
+            	
+		          <span class="post-date">
+		            <span class="post-date-day"><sup>20</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Mar</span> <span class="post-date-year">2017</span>
+		          </span>
+      				
+      				
+      					
+      				
+              
+                <span class="post-reading-time"><i class="fa fa-clock-o"></i> <em>1 min. read</em></span>
+              
+      				
+      					<div class="post-categories">
+				        
+      					
+					        <a class="post-category post-category-development" href="https://spacelis.github.io//categories/development">Development</a>
+      					
+					        <a class="post-category post-category-docker" href="https://spacelis.github.io//categories/docker">Docker</a>
+      					
+      					</div>
+      				
+            </p>
+            
+              <article class="post-summary">
+            	However, my first attempt was not quite satisfactory. I was too ambitious in building a system composed of several containers with each process in one container, as recommended in the community. However, this makes initialization of components running in different containers very complex. I put a lot of effort in making sure they are initialized in the right order, even using [consul]() for distribution configurations. This did not work very well, especially when the hardware went down.
+              </article>
+			  <div class="read-more-link">
+				<a href="/post/container-oriented-or-image-oriented/"><span class="read-more-slashes">//</span>Read More...</a>
+			  </div>
+            
+          </section>
         
           <section  class="post">
             <header class="post-header">
@@ -116,9 +183,7 @@
       					<div class="post-categories">
 				        
       					
-					        <a class="post-category post-category-development" href="https://spacelis.github.io//categories/development">Development</a>
-      					
-					        <a class="post-category post-category-golang" href="https://spacelis.github.io//categories/golang">GoLang</a>
+					        <a class="post-category post-category-projects" href="https://spacelis.github.io//categories/projects">Projects</a>
       					
       					</div>
       				
@@ -156,9 +221,7 @@
       					<div class="post-categories">
 				        
       					
-					        <a class="post-category post-category-development" href="https://spacelis.github.io//categories/development">Development</a>
-      					
-					        <a class="post-category post-category-python" href="https://spacelis.github.io//categories/python">Python</a>
+					        <a class="post-category post-category-projects" href="https://spacelis.github.io//categories/projects">Projects</a>
       					
       					</div>
       				
@@ -177,7 +240,7 @@
             <header class="post-header">
             
             <h1 class="post-title">
-              <a href="/post/hello-world/">hello world</a>
+              <a href="/post/hello-world/">Hello World From Me</a>
             </h1>
             </header>
             <p class="post-meta">
@@ -190,13 +253,25 @@
       					
       				
               
-                <span class="post-reading-time"><i class="fa fa-clock-o"></i> <em>1 min. read</em></span>
+                <span class="post-reading-time"><i class="fa fa-clock-o"></i> <em>6 min. read</em></span>
               
+      				
+      					<div class="post-categories">
+				        
+      					
+					        <a class="post-category post-category-general" href="https://spacelis.github.io//categories/general">General</a>
+      					
+      					</div>
       				
             </p>
             
-              <p>I just start use (again) the github pages for my blog. Hopefully I will write more from now on.</p>
-
+              <article class="post-summary">
+            	I am fascinated in many things, like programming, physics, mathematics, music. These all have intrinsic patterns that render the beauty of the master piece. I really enjoy finding the patterns whenever possible.
+Hello From My Childhood In my youth time, I am impressed by the huge numbers about stars and the universe. Everything is so big, totally out of imagination. I am more impressed that even things of that big can be described in a small little book.
+              </article>
+			  <div class="read-more-link">
+				<a href="/post/hello-world/"><span class="read-more-slashes">//</span>Read More...</a>
+			  </div>
             
           </section>
         

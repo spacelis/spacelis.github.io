@@ -51,6 +51,35 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
 
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<link rel="stylesheet" type="text/css" href="https://spacelis.github.io//css/lightbox.css">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+
 
   
 
@@ -77,8 +106,6 @@
     <nav class="nav">
       <ul class="nav-list">
         <li class="nav-item"><span class="nav-item-separator">//</span><a href="https://spacelis.github.io/">Home</a></li>
-        
-          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/post/csv-loader/">CSV-Loader</a></li>
         
       </ul>
     </nav>
@@ -131,9 +158,7 @@
 			
 				<div class="post-categories">
 				
-					<a class="post-category post-category-development" href="https://spacelis.github.io//categories/development">Development</a>
-				
-					<a class="post-category post-category-python" href="https://spacelis.github.io//categories/python">Python</a>
+					<a class="post-category post-category-projects" href="https://spacelis.github.io//categories/projects">Projects</a>
 				
 				</div>
 			
@@ -209,9 +234,11 @@ Please let me know you if it helps you.</p>
 				<div class="tags-list">
 					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
 					
-	                <a class="post-tag post-tag-development" href="https://spacelis.github.io//tags/development">Development</a>,
-	                
 	                <a class="post-tag post-tag-python" href="https://spacelis.github.io//tags/python">Python</a>,
+	                
+	                <a class="post-tag post-tag-tools" href="https://spacelis.github.io//tags/tools">Tools</a>,
+	                
+	                <a class="post-tag post-tag-backup" href="https://spacelis.github.io//tags/backup">Backup</a>,
 	                
 				</div>
 			
@@ -229,7 +256,7 @@ Please let me know you if it helps you.</p>
 					
 					<div class="paging-older">
 						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
-			            <a class="paging-link" href="/post/hello-world/">hello world</a>
+			            <a class="paging-link" href="/post/hello-world/">Hello World From Me</a>
 		            </div>
 		            
 	            </div>

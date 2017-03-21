@@ -51,6 +51,35 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
 
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<link rel="stylesheet" type="text/css" href="https://spacelis.github.io//css/lightbox.css">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+
 
   
 
@@ -77,8 +106,6 @@
     <nav class="nav">
       <ul class="nav-list">
         <li class="nav-item"><span class="nav-item-separator">//</span><a href="https://spacelis.github.io/">Home</a></li>
-        
-          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/post/csv-loader/">CSV-Loader</a></li>
         
       </ul>
     </nav>
@@ -129,9 +156,7 @@
 			
 				<div class="post-categories">
 				
-					<a class="post-category post-category-development" href="https://spacelis.github.io//categories/development">Development</a>
-				
-					<a class="post-category post-category-golang" href="https://spacelis.github.io//categories/golang">GoLang</a>
+					<a class="post-category post-category-projects" href="https://spacelis.github.io//categories/projects">Projects</a>
 				
 				</div>
 			
@@ -183,9 +208,9 @@ Hopefull, it can help users that requires different DBMS in their data analysis.
 				<div class="tags-list">
 					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
 					
-	                <a class="post-tag post-tag-development" href="https://spacelis.github.io//tags/development">Development</a>,
+	                <a class="post-tag post-tag-python" href="https://spacelis.github.io//tags/python">Python</a>,
 	                
-	                <a class="post-tag post-tag-golang" href="https://spacelis.github.io//tags/golang">golang</a>,
+	                <a class="post-tag post-tag-tools" href="https://spacelis.github.io//tags/tools">Tools</a>,
 	                
 				</div>
 			
@@ -194,6 +219,11 @@ Hopefull, it can help users that requires different DBMS in their data analysis.
 				<div class="paging">
 					<span class="paging-label">More Reading</span>
 					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/post/container-oriented-or-image-oriented/">Container Oriented or Image Oriented</a>
+		            </div>
+		            
 
 					
 					<div class="paging-older">
