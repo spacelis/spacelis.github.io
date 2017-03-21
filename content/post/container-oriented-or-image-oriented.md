@@ -11,7 +11,7 @@ Categories = [
 # menu = "main"
 date = "2017-03-20T01:58:52Z"
 title = "Container Oriented or Image Oriented"
-
+draft = true
 +++
 
 However, my first attempt was not quite satisfactory.
