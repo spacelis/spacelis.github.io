@@ -126,11 +126,10 @@ Please let me know you if it helps you.&lt;/p&gt;
       <pubDate>Thu, 27 Oct 2016 22:38:35 +0100</pubDate>
       
       <guid>https://spacelis.github.io/post/hello-world/</guid>
-      <description>
-
-&lt;p&gt;I am fascinated in many things, like programming, physics, mathematics, music.
+      <description>&lt;p&gt;I am fascinated in many things, like programming, physics, mathematics, music.
 These all have intrinsic patterns that render the beauty of the master piece.
-I really enjoy finding the patterns whenever possible.&lt;/p&gt;
+I really enjoy finding the patterns whenever possible.
+&lt;/p&gt;
 
 &lt;h2 id=&#34;hello-from-my-childhood&#34;&gt;Hello From My Childhood&lt;/h2&gt;
 
@@ -225,8 +224,7 @@ Contrast to the recommendation of keeping containers small, fat images can help 
 
 &lt;p&gt;I am enthusiasm about programming and believe programming can guide me to understand how the world really works.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Science is what we understand well enough to explain to a computer. &amp;ndash; D. Knuth&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Science is what we understand well enough to explain to a computer. &amp;ndash; D. Knuth&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -6,16 +6,41 @@
     <description>Recent content on 0x4C</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Mar 2017 10:49:31 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Mar 2017 01:08:00 +0000</lastBuildDate>
     <atom:link href="https://spacelis.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Thoughts on data protection: Hashing! Hashing! Hashing</title>
+      <title>About Me</title>
+      <link>https://spacelis.github.io/post/about-me/</link>
+      <pubDate>Thu, 23 Mar 2017 01:08:00 +0000</pubDate>
+      
+      <guid>https://spacelis.github.io/post/about-me/</guid>
+      <description>&lt;p&gt;I am a Data Scientist, Research Associate, developer.
+I love implementing interesting ideas and believe only by implementing them can I evaluate how good they are.&lt;/p&gt;
+
+&lt;p&gt;My background is Information Retrieval (&lt;strong&gt;Computer Science&lt;/strong&gt;).
+During my Ph.D., I studied location information in terms of social media users&amp;rsquo; trail patterns.
+Most of code I wrote for my study is in &lt;strong&gt;Python&lt;/strong&gt;.
+Sometimes I need the power from &lt;strong&gt;Hadoop&lt;/strong&gt;/&lt;strong&gt;Spark&lt;/strong&gt; for scale up my analysis.&lt;/p&gt;
+
+&lt;p&gt;I love &lt;strong&gt;Scala&lt;/strong&gt; and have a great experience of using it in my project &lt;a href=&#34;https://github.com/spacelis/mintsearch&#34;&gt;MintSearch&lt;/a&gt;.
+Other languages I can speak are Java, SQL, C/C++, JavaScript, HTML/CSS.&lt;/p&gt;
+
+&lt;p&gt;I also developed &lt;a href=&#34;https://data.cdrc.ac.uk&#34;&gt;CDRC Data&lt;/a&gt;, which is a data portal based on &lt;a href=&#34;https://ckan.org&#34;&gt;CKAN&lt;/a&gt;.
+To customize the CKAN, I developed a plugin which includes various changes to the original CKAN, include a two-phase dataset reviewing procedure.
+The whole infrastructure is running within &lt;strong&gt;Docker&lt;/strong&gt; containers created from a heavily customized Debian image with initialization scripts.
+A lot of scripts were written around the Docker containers to support backup/restore, debugging instance building, etc.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Thoughts on data protection: Hashing!</title>
       <link>https://spacelis.github.io/post/thoughts-on-data-protection/</link>
       <pubDate>Mon, 13 Mar 2017 10:49:31 +0000</pubDate>
       
       <guid>https://spacelis.github.io/post/thoughts-on-data-protection/</guid>
-      <description>
+      <description>&lt;p&gt;TL;DL If you need to share a (key, value) dataset without sharing the whole key set, hash all the keys and give out only (hashed key, value) dataset.
+&lt;/p&gt;
 
 &lt;p&gt;Riddles, secrets exchanging, encryption and so on are always fascinating to fiddle with.
 Modern cryptography is based on mathematical theories which guarantees the hardness of breaking.
@@ -114,8 +139,7 @@ This gives us a strong password and slow down the retrieval speed even further.&
 &lt;p&gt;Information Exposure Controlling is useful in the way that the owner of the data can make sure their data is used in a proper way.
 Hashing functions can be used in different part of the problem.
 This is just a showcase of the problem and what we can do about it.
-Let me know if you have any thoughts on it.&lt;/p&gt;
-</description>
+Let me know if you have any thoughts on it.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -236,11 +260,10 @@ Please let me know you if it helps you.&lt;/p&gt;
       <pubDate>Thu, 27 Oct 2016 22:38:35 +0100</pubDate>
       
       <guid>https://spacelis.github.io/post/hello-world/</guid>
-      <description>
-
-&lt;p&gt;I am fascinated in many things, like programming, physics, mathematics, music.
+      <description>&lt;p&gt;I am fascinated in many things, like programming, physics, mathematics, music.
 These all have intrinsic patterns that render the beauty of the master piece.
-I really enjoy finding the patterns whenever possible.&lt;/p&gt;
+I really enjoy finding the patterns whenever possible.
+&lt;/p&gt;
 
 &lt;h2 id=&#34;hello-from-my-childhood&#34;&gt;Hello From My Childhood&lt;/h2&gt;
 
@@ -335,8 +358,7 @@ Contrast to the recommendation of keeping containers small, fat images can help 
 
 &lt;p&gt;I am enthusiasm about programming and believe programming can guide me to understand how the world really works.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Science is what we understand well enough to explain to a computer. &amp;ndash; D. Knuth&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Science is what we understand well enough to explain to a computer. &amp;ndash; D. Knuth&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
