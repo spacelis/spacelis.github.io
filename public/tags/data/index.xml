@@ -9,12 +9,13 @@
     <atom:link href="https://spacelis.github.io/tags/data/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Thoughts on data protection: Hashing! Hashing! Hashing</title>
+      <title>Thoughts on data protection: Hashing!</title>
       <link>https://spacelis.github.io/post/thoughts-on-data-protection/</link>
       <pubDate>Mon, 13 Mar 2017 10:49:31 +0000</pubDate>
       
       <guid>https://spacelis.github.io/post/thoughts-on-data-protection/</guid>
-      <description>
+      <description>&lt;p&gt;TL;DL If you need to share a (key, value) dataset without sharing the whole key set, hash all the keys and give out only (hashed key, value) dataset.
+&lt;/p&gt;
 
 &lt;p&gt;Riddles, secrets exchanging, encryption and so on are always fascinating to fiddle with.
 Modern cryptography is based on mathematical theories which guarantees the hardness of breaking.
@@ -113,8 +114,7 @@ This gives us a strong password and slow down the retrieval speed even further.&
 &lt;p&gt;Information Exposure Controlling is useful in the way that the owner of the data can make sure their data is used in a proper way.
 Hashing functions can be used in different part of the problem.
 This is just a showcase of the problem and what we can do about it.
-Let me know if you have any thoughts on it.&lt;/p&gt;
-</description>
+Let me know if you have any thoughts on it.&lt;/p&gt;</description>
     </item>
     
   </channel>

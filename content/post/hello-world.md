@@ -10,13 +10,13 @@ Tags = [
 Categories = [
   "General"
 ]
-# menu = "main"
 description = "A brief history of myself..."
 +++
 
 I am fascinated in many things, like programming, physics, mathematics, music.
 These all have intrinsic patterns that render the beauty of the master piece.
 I really enjoy finding the patterns whenever possible.
+<!--more-->
 
 Hello From My Childhood
 -----------------------

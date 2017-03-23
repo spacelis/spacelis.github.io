@@ -1,5 +1,5 @@
 +++
-title = "Thoughts on data protection: Hashing! Hashing! Hashing"
+title = "Thoughts on data protection: Hashing!"
 Description = ""
 Tags = [
   "Data",
@@ -13,6 +13,9 @@ Categories = [
 date = "2017-03-13T10:49:31Z"
 
 +++
+
+TL;DL If you need to share a (key, value) dataset without sharing the whole key set, hash all the keys and give out only (hashed key, value) dataset.
+<!--more-->
 
 Riddles, secrets exchanging, encryption and so on are always fascinating to fiddle with.
 Modern cryptography is based on mathematical theories which guarantees the hardness of breaking.
