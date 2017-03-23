@@ -1,4 +1,5 @@
 languageCode = "en-us"
 baseurl = "https://spacelis.github.io/"
-title = "SpaceLi's Blog"
+title = "0x4C"
 theme = "hugo-redlounge"
+disqusShortname = "0x4C"

@@ -8,7 +8,7 @@
 
 	<div id="layout" class="pure-g">
     {{ partial "sidebar.html" . }}
-	
+
 	{{ if .Params.banner }}
 	<div class="content-banner-image pure-u-1 pure-u-md-3-4" style="{{ if .Params.bannerheight }}height: {{ .Params.bannerheight }}px;{{ end }}">
 		<img src="{{ .Params.banner }}" class="pure-img" style="{{ if .Params.bannerfill }}width: 100%;{{ end }}" />
@@ -66,7 +66,7 @@
 			{{ end }}
 
             {{ .Content }}
-	
+
 			{{ if .Params.socialsharing }}
 		    	{{ partial "socialsharing.html" . }}
 		    {{ end }}
@@ -79,6 +79,8 @@
 	                {{ end }}
 				</div>
 			{{ end }}
+
+			{{ partial "disqus.html" . }}
 
 			{{ if not .Params.nopaging }}
 				<div class="paging">
@@ -102,7 +104,7 @@
           {{ if not .Params.nocomment }}
           	{{ template "_internal/disqus.html" . }}
           {{ end }}
-        
+
       {{ partial "footer.html" . }}
     </div>
   </div>
