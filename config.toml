@@ -4,3 +4,4 @@ title = "0x4C"
 theme = "hugo-redlounge"
 disqusShortname = "0x4C"
 googleAnalytics = "UA-43808487-3"
+enableRobotsTXT = true
