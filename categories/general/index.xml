@@ -9,30 +9,6 @@
     <atom:link href="https://spacelis.github.io/categories/general/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>About Me</title>
-      <link>https://spacelis.github.io/post/about-me/</link>
-      <pubDate>Thu, 23 Mar 2017 01:08:00 +0000</pubDate>
-      
-      <guid>https://spacelis.github.io/post/about-me/</guid>
-      <description>&lt;p&gt;I am a Data Scientist, Research Associate, developer.
-I love implementing interesting ideas and believe only by implementing them can I evaluate how good they are.&lt;/p&gt;
-
-&lt;p&gt;My background is Information Retrieval (&lt;strong&gt;Computer Science&lt;/strong&gt;).
-During my Ph.D., I studied location information in terms of social media users&amp;rsquo; trail patterns.
-Most of code I wrote for my study is in &lt;strong&gt;Python&lt;/strong&gt;.
-Sometimes I need the power from &lt;strong&gt;Hadoop&lt;/strong&gt;/&lt;strong&gt;Spark&lt;/strong&gt; for scale up my analysis.&lt;/p&gt;
-
-&lt;p&gt;I love &lt;strong&gt;Scala&lt;/strong&gt; and have a great experience of using it in my project &lt;a href=&#34;https://github.com/spacelis/mintsearch&#34;&gt;MintSearch&lt;/a&gt;.
-Other languages I can speak are Java, SQL, C/C++, JavaScript, HTML/CSS.&lt;/p&gt;
-
-&lt;p&gt;I also developed &lt;a href=&#34;https://data.cdrc.ac.uk&#34;&gt;CDRC Data&lt;/a&gt;, which is a data portal based on &lt;a href=&#34;https://ckan.org&#34;&gt;CKAN&lt;/a&gt;.
-To customize the CKAN, I developed a plugin which includes various changes to the original CKAN, include a two-phase dataset reviewing procedure.
-The whole infrastructure is running within &lt;strong&gt;Docker&lt;/strong&gt; containers created from a heavily customized Debian image with initialization scripts.
-A lot of scripts were written around the Docker containers to support backup/restore, debugging instance building, etc.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Hello World From Me</title>
       <link>https://spacelis.github.io/post/hello-world/</link>
       <pubDate>Thu, 27 Oct 2016 22:38:35 +0100</pubDate>
