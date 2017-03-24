@@ -17,7 +17,7 @@ draft = true
 However, my first attempt was not quite satisfactory.
 I was too ambitious in building a system composed of several containers with each process in one container, as recommended in the community.
 However, this makes initialization of components running in different containers very complex.
-I put a lot of effort in making sure they are initialized in the right order, even using [consul]() for distribution configurations.
+I put a lot of effort in making sure they are initialized in the right order, even using [consul](https://www.consul.io/) for distribution configurations.
 This did not work very well, especially when the hardware went down.
 The lack of tools and knowledge of doing it in the right way frustrated me and make me going in a different direction.
 
