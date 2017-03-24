@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://spacelis.github.io//sitemap.xml
+Sitemap: https://spacelis.github.io/sitemap.xml
