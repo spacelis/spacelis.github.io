@@ -6,9 +6,10 @@ Description = ""
 Tags = [
 ]
 Categories = [
-  "General"
 ]
 draft = true
+nodate = true
+noreadtime = true
 +++
 
 I am a Data Scientist, Research Associate, developer.
@@ -29,11 +30,3 @@ Here are some of my projects:
  - [**BakMan**](https://github.com/spacelis/bakman): A file based backup managing helper tool, with which user can select a subset of files by rules. //Python
  - [**lazylist**](https://github.com/spacelis/lazylist): A toy stream-like structure written in Python trying to mimic the Stream in Scala. //Python
  - [**lispy**](https://github.com/spacelis/lispy): A toy project of building Lisp interpreter in Python. //Python
-
-//TODO
-
-[CDRC Data](https://data.cdrc.ac.uk) is a project for provide a data portal for the data sets and their metadata held by CDRC.
-It is based on [CKAN](https://ckan.org), an open platform for data hosting.
-To customize the CKAN, I wrote a plugin which includes various modifications to the CKAN, include a two-phase dataset reviewing workflow.
-The whole infrastructure is running within **Docker** containers created from a heavily customized Debian image with initializing scripts.
-There are also scripts to support backup/restore, debugging instance building, etc. and they were all written around the Docker containers
