@@ -16,4 +16,4 @@ git commit -m "$msg"
 
 # Push source and build repos.
 git push
-git subtree push --prefix=public git@github.com:spacelis/spacelis.github.io master
+git subtree push --prefix=public --squash git@github.com:spacelis/spacelis.github.io master
