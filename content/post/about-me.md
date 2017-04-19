@@ -17,9 +17,11 @@ I love implementing interesting ideas and believe only by implementing them can 
 
 My background is Information Retrieval (**Computer Science**).
 During my Ph.D., I studied location information in terms of social media users' trail patterns.
-Most of code I wrote for my study is in **Python**.
-Sometimes I need the power from **Hadoop**/**Spark** for scale up my analysis.
-**Scala** is one of my favourite language and using it in my project [MintSearch](https://github.com/spacelis/mintsearch) and data analysis on Spark is really great.
+I love Machine Learning and try to learn and think about it whenever I have time.
+
+Most of code I wrote for my Ph.D. projects is in **Python**.
+Sometimes I need the power from **Hadoop**/**Spark** to scale up my analysis running on several hundreds cores.
+**Scala** is another favourite language of mine, especially when I use Spark.
 I also speak other languages, for example, Java, SQL, C/C++, JavaScript, HTML/CSS.
 
 Here are some of my projects:

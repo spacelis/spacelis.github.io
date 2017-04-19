@@ -9,4 +9,4 @@ enableRobotsTXT = true
 [params]
   sidebartitle = "0x4C"
   sidebartagline = "SpaceLis' Blog"
-  sidebarphoto = "/img/photo.png"
+  sidebarphoto = "/img/logo.svg"
