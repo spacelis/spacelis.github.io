@@ -2,11 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://spacelis.github.io/</loc>
-    <lastmod>2017-03-13T10:49:31+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://spacelis.github.io/post/thoughts-on-data-protection/</loc>
     <lastmod>2017-03-13T10:49:31+00:00</lastmod>
   </url>
@@ -24,6 +19,89 @@
   <url>
     <loc>https://spacelis.github.io/post/hello-world/</loc>
     <lastmod>2016-10-27T22:38:35+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://spacelis.github.io/</loc>
+    <lastmod>2017-03-13T10:49:31+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://spacelis.github.io/tags/backup/</loc>
+    <lastmod>2016-11-02T22:17:59+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://spacelis.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://spacelis.github.io/tags/cryptography/</loc>
+    <lastmod>2017-03-13T10:49:31+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://spacelis.github.io/tags/data/</loc>
+    <lastmod>2017-03-13T10:49:31+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://spacelis.github.io/tags/docker/</loc>
+    <lastmod>2016-10-27T22:38:35+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://spacelis.github.io/categories/general/</loc>
+    <lastmod>2016-10-27T22:38:35+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://spacelis.github.io/post/</loc>
+    <lastmod>2017-03-13T10:49:31+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://spacelis.github.io/categories/pounder/</loc>
+    <lastmod>2017-03-13T10:49:31+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://spacelis.github.io/categories/projects/</loc>
+    <lastmod>2016-12-09T09:02:19+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://spacelis.github.io/tags/python/</loc>
+    <lastmod>2016-12-09T09:02:19+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://spacelis.github.io/tags/scala/</loc>
+    <lastmod>2016-10-27T22:38:35+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://spacelis.github.io/tags/</loc>
+    <lastmod>2016-11-02T22:17:59+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://spacelis.github.io/tags/tools/</loc>
+    <lastmod>2016-12-09T09:02:19+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

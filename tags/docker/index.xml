@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>0x4C</title>
-    <link>https://spacelis.github.io/tags/docker/index.xml</link>
-    <description>Recent content on 0x4C</description>
+    <title>Docker on 0x4C</title>
+    <link>https://spacelis.github.io/tags/docker/</link>
+    <description>Recent content in Docker on 0x4C</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://spacelis.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Oct 2016 22:38:35 +0100</lastBuildDate>
+    
+	<atom:link href="https://spacelis.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Hello World From Me</title>
@@ -17,102 +20,7 @@
       <description>&lt;p&gt;I am fascinated in many things, like programming, physics, mathematics, music.
 These all have intrinsic patterns that render the beauty of the master piece.
 I really enjoy finding the patterns whenever possible.
-&lt;/p&gt;
-
-&lt;h2 id=&#34;hello-from-my-childhood&#34;&gt;Hello From My Childhood&lt;/h2&gt;
-
-&lt;p&gt;In my youth time, I am impressed by the huge numbers about stars and the universe.
-Everything is so big, totally out of imagination.
-I am more impressed that even things of that big can be described in a small little book.
-A few statement can make a big prediction on how the stars and the universe would go and evolve.
-I can not stop reading and thinking about the mechanisms behind them.&lt;/p&gt;
-
-&lt;p&gt;Later, my interests into the universe generally applied to physics when I was in school.
-It describes things and makes predictions of their transiting between states.
-I started to like learning the details of a how and why rather than accepting it can work.
-Learning physics give me accurate thinking.
-Though I admit, there is always a point to stop asking why as the beyond is an imaginary world.
-That is my very preliminary taste of philosophy.&lt;/p&gt;
-
-&lt;h2 id=&#34;hello-to-programming&#34;&gt;Hello to Programming&lt;/h2&gt;
-
-&lt;p&gt;Describing things precisely and controlling things is more fun.
-That was the start of my programming life.
-I write my first BASIC program to move icons around.
-The crappy machine I used made me very frustrated because it can not run a program longer than the screen.
-Until later I found I could make it work if I consequently input the code without editing back.
-My serious programming life started when I chose computer science as my major in the university.
-Though I sat through a lot of courses, I think reading and coding myself taught me much more.
-Of course, the lectures would give more systematic reviews of the topics, where you learn about alternatives.&lt;/p&gt;
-
-&lt;p&gt;I love programming in general, because you can make things happen with your finger tips.
-That is not the whole story.
-I think I love programming is because it describe how things work in a very subtle way, as you cannot skip steps in describing a thing or an algorithm.
-You have to make sure every details right for a piece of code work and you can hardly cheat on that.
-Of course, programming languages and tools hide a lot details to make sure your are not bored with those details.
-But I believe if you program for some time, you will eventually learn the details as it determines the behaviours of the thing you make.&lt;/p&gt;
-
-&lt;p&gt;I started programming with Pascal/Delphi.
-I went to programming contests and learn to write basic algorithms in Pascal, as it was one of the designated language for contests at the time.
-Following that, I learned Delphi when I tried to program on Windows machines.
-I don&amp;rsquo;t think I formally learned C/C++, but I enjoy reading &lt;a href=&#34;http://www.stroustrup.com/dne.html&#34;&gt;&lt;em&gt;The Design and Evolution of C++&lt;/em&gt;&lt;/a&gt; by &lt;em&gt;Bjarne Stroustrup&lt;/em&gt;.
-It taught me a lot about how a programming language becomes that way and what actually happen when we write code in OOP.
-Java is a language I put quite some time into.
-Programming a website with JSP is quite interesting experience.
-A complex system with different technology combining together is really a challenge.
-Every click on a web page involves a lot of parts moving co-ordinately.
-Query information from Javascripts, getting requests handled in logic written in Java, retrieving information from databases in SQL, rendering pages in JSP and so on can make a bug buried deeply in the stack.
-The only universal general debugger is &lt;em&gt;print&lt;/em&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;hello-to-python-world&#34;&gt;Hello to Python World&lt;/h2&gt;
-
-&lt;p&gt;I learned Python when it started to prevail.
-The simplicity made me feel like sitting in breeze.
-The forced indentation in the code was really broaden of my mind in how a programming language can help you build a good habit.
-Python then became my major language during my PhD.
-I ran Python programs on my laptop, on the server and make them scale.
-Jupyter (a.k.a IPython Notebook) is my friend which I need when I want to explore some data and plot them.
-Some of my favourite packages include but limit to Matplotlib, Pandas, Numpy, Seaborn, Requests, Click.
-I also did some personal exploring project like &lt;a href=&#34;https://github.com/spacelis/lispy&#34;&gt;lispy&lt;/a&gt; in which I tried to pounder how a lisp program can be built from Python.
-Anther one is &lt;a href=&#34;https://github.com/spacelis/lazylist&#34;&gt;lazylist&lt;/a&gt; which is my trial implementation of infinite list which lazy evaluation in Python.
-These projects are not meant to become ones at production level.
-They were purely from my curiosity into what a programming language really is.
-Turning completeness is great, it can not promise a programming language&amp;rsquo;s expressiveness.
-But you can get the feeling of the good and the evil parts of a programming language when you implement some interesting constructs with them.&lt;/p&gt;
-
-&lt;h2 id=&#34;hello-to-scala&#34;&gt;Hello to Scala&lt;/h2&gt;
-
-&lt;p&gt;I am also interested in Scala.
-The interests begins when I want to learn some function programming.
-I know about Haskell because of my colleague as well as Scala.
-The courses on Coursera really inspired me to think about &lt;em&gt;descriptions&lt;/em&gt; instead of &lt;em&gt;commands&lt;/em&gt;.
-Scala also has powerful type system and can let you program without much burden in boilerplates.
-Many syntactic surges may the code more readable and implicit conversion is really a save of many simple type casting.
-Mintsearch is one interesting project built with Scala.
-It extensibility can only be that easy with Scala&amp;rsquo;s traits.
-Though I believe Python can do similar things as easy as Scala, it can not give you type checking and all other benefit from it.&lt;/p&gt;
-
-&lt;h2 id=&#34;hello-to-a-production-project&#34;&gt;Hello to a production project&lt;/h2&gt;
-
-&lt;p&gt;CDRC Data website is my first production project which is a data portal providing information and downloads of the data we hold in CDRC.
-It is based on the open data portal platform called &lt;a href=&#34;http://ckan.org&#34;&gt;CKAN&lt;/a&gt;.
-It provides a very extensible plugin system.
-So I can avoid much of direct editing its codebase and put all functionality in a plugin called &lt;em&gt;ckanext-cdrc&lt;/em&gt;.
-However, it is still difficult if one wants to change behaviours of some deep parts.
-For example, we need a two-stage reviewing procedure for data sets when they come into the website.&lt;/p&gt;
-
-&lt;p&gt;Deploying is also another challenging task, as the website relies on several components including a uwsgi running CKAN with plugins, a Solr server for indexing and searching, a PostgreSQL Database for persistence, another uwsgi running datapusher, a nginx for reverseproxy, a memcached for caching SQL queries results.
-Making sure all these co-operate with each other is complex, especially when initializing them or updating the code.
-Docker is really a nice tool to put things together, I mean, literally.
-Contrast to the recommendation of keeping containers small, fat images can help you press all complex configurations into a single vinyl that plays well every where.&lt;/p&gt;
-
-&lt;p&gt;Developing a production project is really a balance walk and many decisions have to evaluate and re-evaluate during the process.&lt;/p&gt;
-
-&lt;h2 id=&#34;finale&#34;&gt;Finale&lt;/h2&gt;
-
-&lt;p&gt;I am enthusiasm about programming and believe programming can guide me to understand how the world really works.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Science is what we understand well enough to explain to a computer. &amp;ndash; D. Knuth&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;/p&gt;</description>
     </item>
     
   </channel>
