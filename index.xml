@@ -6,10 +6,21 @@
     <description>Recent content on 0x4C</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Mar 2017 10:49:31 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Mar 2017 01:08:00 +0000</lastBuildDate>
     
 	<atom:link href="https://spacelis.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About Me</title>
+      <link>https://spacelis.github.io/post/about-me/</link>
+      <pubDate>Thu, 23 Mar 2017 01:08:00 +0000</pubDate>
+      
+      <guid>https://spacelis.github.io/post/about-me/</guid>
+      <description>I am a Data Scientist, Research Associate, Software Developer. I love implementing interesting ideas and believe only by implementing them can I learn how good they are.
+My background is Information Retrieval (Computer Science). During my Ph.D., I studied location information, especially, social media users&amp;rsquo; trail patterns.
+I love Python and most of the code I wrote for my Ph.D. projects is in Python. Sometimes I need the power from Hadoop/Spark to scale up my analysis to running on several hundreds cores.</description>
+    </item>
     
     <item>
       <title>Thoughts on data protection: Hashing!</title>
