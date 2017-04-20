@@ -7,22 +7,21 @@ Tags = [
 ]
 Categories = [
 ]
-draft = true
+draft = false
 nodate = true
 noreadtime = true
 nocomment = true
 +++
 
-I am a Data Scientist, Research Associate, developer.
-I love implementing interesting ideas and believe only by implementing them can I evaluate how good they are.
+I am a Data Scientist, Research Associate, Software Developer.
+I love implementing interesting ideas and believe only by implementing them can I learn how good they are.
 
 My background is Information Retrieval (**Computer Science**).
-During my Ph.D., I studied location information in terms of social media users' trail patterns.
-I love Machine Learning and try to learn and think about it whenever I have time.
+During my Ph.D., I studied location information, especially, social media users' trail patterns.
 
-Most of code I wrote for my Ph.D. projects is in **Python**.
-Sometimes I need the power from **Hadoop**/**Spark** to scale up my analysis running on several hundreds cores.
-**Scala** is another favourite language of mine, especially when I use Spark.
+I love Python and most of the code I wrote for my Ph.D. projects is in **Python**.
+Sometimes I need the power from **Hadoop**/**Spark** to scale up my analysis to running on several hundreds cores.
+**Scala** is another favourite language of mine, especially when I want to use Spark.
 I also speak other languages, for example, Java, SQL, C/C++, JavaScript, HTML/CSS.
 
 Here are some of my projects:
