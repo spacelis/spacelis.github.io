@@ -1,0 +1,12 @@
+name = "Half Peace"
+description = "A clean, responsive, template with red accents, forked from redlounge."
+license = "Apache 2.0"
+licenselink = ""
+source_repo = ""
+tags = ["halfpeace"]
+features = ["blog", "gallery"]
+min_version = 0.20
+
+[author]
+    name = "Wen Li"
+    homepage = "https://spacelis.github.io"

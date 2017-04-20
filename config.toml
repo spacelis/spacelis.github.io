@@ -1,7 +1,7 @@
 languageCode = "en-us"
 baseURL = "https://spacelis.github.io"
 title = "0x4C"
-theme = "hugo-redlounge"
+theme = "hugo-halfpeace"
 disqusShortname = "0x4C"
 googleAnalytics = "UA-43808487-3"
 enableRobotsTXT = true

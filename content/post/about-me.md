@@ -10,6 +10,7 @@ Categories = [
 draft = true
 nodate = true
 noreadtime = true
+nocomment = true
 +++
 
 I am a Data Scientist, Research Associate, developer.
